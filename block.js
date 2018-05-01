@@ -19,11 +19,11 @@ class Block {
 	}
 
 	static mineBlock(lastBlock, data) {
-		const timestamp = Data.now();
+		const timestamp = Date.now();
 		const lastHash = lastBlock.hash;
 		const hash = 'todo-hash';
 
-		return new this(timestamp, lashHash, hash, data);
+		return new this(timestamp, lastHash, hash, data);
 	}
 }
 
